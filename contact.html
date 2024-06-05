@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="musicbakground" href="music.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>My Personal Website</title>
+</head>
+<style>
+
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title{
+    font-weight: 100;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500px;
+    border-radius: 50px;
+}
+
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:placeholder{
+    color:#000000;
+}
+
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.contact-left button img{
+    height: 15px;
+}
+
+@media (max-width:800px){
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+}
+
+/*--social media icon--*/
+
+.socialIcons{
+    display: flex;
+    color: #000000;
+    justify-content: center;
+}
+
+.socialIcons a{
+    padding: 1rem;
+    background-color: #807f7f;
+    border-radius: 10%;
+}
+
+.socialIcons a li{
+    font-size: 2em;
+    color: #ffffff;
+    opacity: 0.9;
+}
+</style>
+<body>
+
+<header>
+        <h1>MY PERSONAL OFFICE</h1>
+</header>
+
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li class="nav-link">
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li class="nav-link services">
+                    <a href="mystory.html">MyStory</Menu></a>
+                </li>
+
+                <li class="nav-link services">
+                    <a href="family.html">Family</a>
+                </li>
+
+                <li class="nav-link services">
+                    <a href="#">Friends</a>
+                    <ul class="drop-down">
+                        <li><a href="bebiri.html">Bebiri dan Pengembalanya</a></li>
+                        <li><a href="iloveyou.html">ILoveYou</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-link">
+                    <a href="project.html">Project</a>
+                </li>
+
+                <li class="nav-link services">
+                    <a href="moment.html">Moment</a>
+                </li>
+
+                <li class="nav-link">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+  
+
+    <section class="content">
+        
+<br><br>
+        
+<br><br>
+
+     <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h4>Let's Get in Touch!</h4>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="6ce35723-ae6b-4960-9c39-107e58e25a60">
+            <input type="text" name="Name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="text" name="Email" placeholder="Your Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit">Submit</button>
+        </form>          
+        <div class="contact-right">
+            <img src="images/goodbye.jpeg" alt="">
+            </div>
+     </div>
+
+    </section>
+    
+    <footer>
+        <div class="footercontain">
+            <br><br>
+            <p><i>"you see, people doesn't care if you're alive or dead. what matters most is
+                how you chose to stay despite everything."</i></p>
+       
+            <div class="footerBottom">
+                <p>&copy; 2024 Nashreen. All rights reserved.</p>
+            </div>
+        </div>        
+    </footer>
+
+    <audio id="song">
+        <source src="sound.mp4">
+    </audio>
+
+</body>
+</html>
